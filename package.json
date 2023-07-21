@@ -2,7 +2,8 @@
   "name": "hello",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/cjs/hello.js",
+  "type": "module",
+  "main": "dist/esm/hello.js",
   "types": "dist/types/hello/index.d.ts",
   "scripts": {
     "prepare": "npm run build",

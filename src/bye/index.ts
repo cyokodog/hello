@@ -1,1 +1,3 @@
-console.log('bye world');
+export const bye = () => {
+  console.log('bye world');
+};
