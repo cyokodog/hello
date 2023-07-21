@@ -2,9 +2,20 @@
   "name": "hello",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "main": "dist/esm/hello.js",
+  "main": "dist/hello.cjs",
   "types": "dist/types/hello/index.d.ts",
+  "exports": {
+    "./hello": {
+      "require": "./dist/hello.cjs",
+      "import": "./dist/hello.mjs",
+      "types": "./dist/types/hello/index.d.ts"
+    },
+    "./bye": {
+      "require": "./dist/bye.cjs",
+      "import": "./dist/bye.mjs",
+      "types": "./dist/types/bye/index.d.ts"
+    }
+  },
   "scripts": {
     "prepare": "npm run build",
     "build": "node build.mjs && tsc --declaration --emitDeclarationOnly --declarationDir './dist/types'"

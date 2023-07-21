@@ -10,16 +10,17 @@ const baseSettings = {
   minify: true,
   sourcemap: false,
   target: ['ES6'],
+  outdir: 'dist',
 };
 
 build({
   ...baseSettings,
-  outdir: 'dist/esm',
   format: 'esm',
+  outExtension: { '.js': '.mjs' },
 });
 
 build({
   ...baseSettings,
-  outdir: 'dist/cjs',
   format: 'cjs',
+  outExtension: { '.js': '.cjs' },
 });
