@@ -1,0 +1,25 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cyokodog/hello.git"
+  },
+  "keywords": [],
+  "author": "cyokodog <cyokodog@gmail.com> (https://www.cyokodog.net/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyokodog/hello/issues"
+  },
+  "homepage": "https://github.com/cyokodog/hello#readme",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
