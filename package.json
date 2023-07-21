@@ -2,8 +2,8 @@
   "name": "hello",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/cjs/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/cjs/hello.js",
+  "types": "dist/types/hello/index.d.ts",
   "scripts": {
     "prepare": "npm run build",
     "build": "node build.mjs && tsc --declaration --emitDeclarationOnly --declarationDir './dist/types'"

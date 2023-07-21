@@ -2,7 +2,8 @@ import { build } from 'esbuild';
 
 const baseSettings = {
   entryPoints: {
-    index: './src/index.ts',
+    hello: './src/hello/index.ts',
+    bye: './src/bye/index.ts',
   },
   logLevel: 'info',
   bundle: true,
